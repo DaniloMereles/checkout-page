@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root{
+    --Montserrat: 'Montserrat', sans-serif;
+    --Gray1: #333333;
+    --Gray2: #4F4F4F;
+    --Gray3: #828282;
+    --Gray4: #4E5150;
+    --Gray5: #E0E0E0;
+    --Gray6: #F2F2F2;
+    --Orange: #F2994A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{   
+    font-size: 16px;
+    font-family: var(--Montserrat);
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout{
+    width: 383px;
+    height: 535px;
+    background-color: var(--Gray6);
+    border-radius: 12px;
+    padding-left: 29px;
+    padding-top: 33px;
+    padding-right:  36px;
+    padding-bottom: 14px;
+}
+
+.checkout__product{
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.checkout__img{
+    width: 134.21px;
+    height: 136.27px;
+    border-radius: 13px;
+    margin-right: 20px;
+}
+
+.checkout__name{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: var(--Gray4);
+    margin-bottom: 6px;
+}
+
+.checkout__price{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: var(--Orange);
+    margin-bottom: 24px;
+}
+
+.checkout__desc{
+    font-weight: 600;
+    color: var(--Gray4);
+    font-size: 12px;
+    line-height: 14.63px;
+    margin-left: 9px;
+    text-decoration: line-through;
+}
+
+.counter{
+    width: 134.25px;
+    height: 52px;
+    border: 1px solid var(--Gray3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 12px;
+    color: var(--Gray1);
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.counter__btn{
+    width: 21.2px;
+    height: 21.2px;
+    border: none;
+    outline: none;
+    background-color: var(--Gray5);
+    color: var(--Gray3);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout__pay{
+    width: 327.06px;
+    margin-top: 95px;
+    color: var(--Gray1);
+}
+
+.checkout__money{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #BDBDBD;
+    margin-bottom: 10px;
+}
+
+.checkout__page{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+}
+
+.form{
+    width: 465px;
+    margin-right: 112px;
+}
+
+.form__title{
+    font-size: 36px;
+    line-height: 43.88px;
+    color: var(--Gray4);
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+.form__subtitle{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: var(--Gray1);
+    margin-bottom: 30px;
+}
+
+.form__inputs{
+    width: 100%;
+    height: 56px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form__label{
+    position: absolute;
+    top: -16px;
+    font-family: var(--Montserrat);
+    font-size: 12px;
+    line-height: 14.63px;
+    color: var(--Gray2);
+    font-weight: 600;
+}
+
+.form__input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--Gray3);
+    border-radius: 12px;
+    padding-left: 52px;
+    font-family: var(--Montserrat);
+}
+
+.form__input-container{
+    width: 48%;
+    height: 100%;
+}
+
+.form__input::placeholder{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.form__icon{
+    position: absolute;
+    left: 14px;
+    top: 20px;
+    bottom: 20px;
+    color: var(--Gray3);
+}
+
+.postal{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    bottom: 20px;
+    color: var(--Gray3);
+}
+
+.form__checkbox{
+    font-family: var(--Montserrat);
+    font-size: 12px;
+    line-height: 14.63px;
+    color: var(--Gray2);
+    display: flex;
+    align-items: center;
+}
+
+.form__checkboxInput{
+    width: 21px;
+    height: 21px;
+    margin-right: 11px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--Gray3);
+}
+
+.form__submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__button{
+    width: 166px;
+    height: 54px;
+    cursor: pointer;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: var(--Orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+}
+
+.form__info{
+    width: 100%;
+    margin-bottom: 58px;
+}
+
+.form__address{
+    width: 100%;
+}
+
+@media (max-width: 545px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form{
+        width: 95%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .postal{
+        left: 220px;
+    }
+
+    .checkout{
+        width: 95%;
+    }
+}
